@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ftd1</title>
+  </head>
+  <body>
+    <div class="wrapper max-w-2xl w-full bg-white rounded-md p-4 lg:flex-row">
+      <div
+        class="leftSide flex justify-center min-h-[170px] gap-6 border p-4 px-10 relative overflow-hidden rounded-md lg:basis-[200px] lg:h-auto lg:flex-col lg:justify-start "
+      >
+        <div
+          class="shape1 absolute h-20 w-20 -left-10 bottom-2 rounded-full"
+        ></div>
+        <div class="shape3 absolute right-10 bottom-10">
+          <div class="t1 h-8 w-2 bg-white rounded-sm"></div>
+          <div class="t2 h-8 w-2 bg-white rounded-sm"></div>
+          <div class="t3 h-8 w-2 bg-white rounded-sm"></div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div
+            class="step step1 w-8 h-8 rounded-full flex items-center justify-center active"
+          >
+            1
+          </div>
+          <div>
+            <p class="text-slate-400 hidden lg:block">step 1</p>
+            <h3 class="font-semibold text-white hidden lg:block">your Info</h3>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div
+            class="step step2 w-8 h-8 rounded-full  font-bold flex items-center justify-center"
+          >
+            2
+          </div>
+          <div>
+            <p class="text-slate-400 hidden lg:block">step 2</p>
+            <h3 class="font-semibold text-white hidden lg:block">select plan</h3>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div
+            class="step step3 w-8 h-8 rounded-full font-bold flex items-center justify-center"
+          >
+            3
+          </div>
+          <div>
+            <p class="text-slate-400 hidden lg:block">step 3</p>
+            <h3 class="font-semibold text-white hidden lg:block">add ons</h3>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div
+            class="step step4 w-8 h-8 rounded-full  font-bold flex items-center justify-center"
+          >
+            4
+          </div>
+          <div>
+            <p class="text-slate-400 hidden lg:block">step 4</p>
+            <h3 class="font-semibold text-white hidden lg:block">summary</h3>
+          </div>
+        </div>
+      </div>
+      <div class="rightSide p-4 w-[80%] shadow-lg mx-auto bg-white rounded-lg -translate-y-10 lg:flex-auto lg:shadow-none lg:w-0 lg:translate-y-0 lg:basis-auto">
+        <h2 class="text-3xl font-bold title">Personal Info</h2>
+        <p class="text-slate-500 text-sm">
+          please fill your information name email adress
+        </p>
+        <div class="inputGroup my-4">
+          <label class="font-semibold block">Your name</label>
+          <input
+            type="text"
+            class="px-2 py-1 rounded-md outline-none border border-2 w-full mt-1"
+            placeholder="e.g.Stephen King"
+            required
+          />
+        </div>
+        <div class="inputGroup my-4">
+          <label class="font-semibold block">Your email</label>
+          <input
+            type="email"
+            class="px-2 py-1 rounded-md outline-none border border-2 w-full mt-1"
+            placeholder="e.g.Stephenking@lorem.com"
+            required
+          />
+        </div>
+        <div class="inputGroup my-4">
+          <label class="font-semibold block">Your phone number</label>
+          <input
+            type="text"
+            class="px-2 py-1 rounded-md outline-none border border-2 w-full mt-1"
+            placeholder="e.g +1 234 567 890"
+            required
+          />
+        </div>
+        <button class="nextstep rounded-md p-3 text-white font-semibold mt-4">
+          next step
+        </button>
+      </div>
+
+      <div class="rightSide hidden p-4 w-[80%] shadow-lg mx-auto bg-white rounded-lg -translate-y-10 lg:flex-auto lg:shadow-none lg:w-0 lg:translate-y-0 lg:basis-auto">
+        <h2 class="text-3xl font-bold title">Select Your plan</h2>
+        <p class="text-slate-500 text-sm">please your plan to continue</p>
+        <div class="flex flex-col gap-2 lg:flex-row items-center gap-6 my-4">
+          <div
+            class="card card1 rounded-md border border-2 shadow-lg p-3 px-6 flex w-full  md:flex-col gap-8 justify-between"
+          >
+            <div class="imageWrapper h-10 w-10">
+              <img src="./assets/icon-arcade.svg" class="w-full" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="font-bold">arcad</h3>
+              <p class="text-slate-400">9$/mo</p>
+            </div>
+          </div>
+          <div
+          class="card card2 rounded-md border border-2 shadow-lg p-3 px-6 flex w-full  md:flex-col gap-8 justify-between"
+        >
+          <div class="imageWrapper h-10 w-10">
+            <img src="./assets/icon-advanced.svg" class="w-full" />
+          </div>
+
+          <div class="card-info">
+            <h3 class="font-bold">Advanced</h3>
+            <p class="text-slate-400">12$/mo</p>
+          </div>
+        </div>
+          <div
+            class="card card3 rounded-md border border-2 shadow-lg p-3 px-6 flex w-full  md:flex-col gap-8 justify-between"
+          >
+            <div class="imageWrapper h-10 w-10">
+              <img src="./assets/icon-pro.svg" class="w-full" />
+            </div>
+
+            <div class="card-info">
+              <h3 class="font-bold">pro</h3>
+              <p class="text-slate-400">15$/mo</p>
+            </div>
+          </div>
+        </div>
+        <div class="bar flex justify-around shadow-lg w-full mx-auto px-4 py-2">
+            <h2>Monthly</h2>
+            <div class="switcher active">
+                <div class="bull"></div>
+            </div>
+            <h2>Yearly</h2>
+        </div>
+        <div class="btns flex items-center justify-between">
+        
+        <button class="backstep rounded-md p-3 font-semibold">Backstep</button>
+        <button class="nextstep rounded-md p-3 text-white font-semibold mt-4">
+          next step
+        </button>
+    </div>
+      </div>
+
+      <div class="rightSide hidden p-4 w-[80%] shadow-lg mx-auto bg-white rounded-lg -translate-y-10 lg:flex-auto lg:shadow-none lg:w-0 lg:translate-y-0 lg:basis-auto">
+        <h2 class="text-3xl font-bold title">Pick add-ons</h2>
+        <p class="text-slate-500 text-sm">Add ons help enhance your gaming experience</p>
+        <div class="ons-list my-6 flex flex-col gap-6">
+            <div class="item-list rounded-xl flex justify-between items-center">
+                <img src="assets/icon-checkmark.svg" class="checkbox border p-1 active" />
+                <div class="">
+                    <h3 class="item-title">Online services</h3>
+                    <p class="item-desc">Access to multiplayer games</p>
+                </div>
+                <p class="item-price">+1$/mo</p>
+            </div>
+            <div class="item-list rounded-xl flex justify-between items-center">
+                <img src="assets/icon-checkmark.svg" class="checkbox border p-1" />
+                <div class="">
+                    <h3 class="item-title">Larger storage</h3>
+                    <p class="item-desc">Extra 1TB of cloud save</p>
+                </div>
+                <p class="item-price">+2$/mo</p>
+            </div>
+            <div class="item-list rounded-xl flex justify-between items-center">
+                <img src="assets/icon-checkmark.svg" class="checkbox border p-1" />
+                <div class="">
+                    <h3 class="item-title">Customizable Profile</h3>
+                    <p class="item-desc">custom theme on your profile</p>
+                </div>
+                <p class="item-price">+2$/mo</p>
+            </div>
+        </div>
+        <div class="btns flex items-center justify-between">
+            
+            <button class="backstep rounded-md p-3  font-semibold">Backstep</button>
+            <button class="nextstep rounded-md p-3 text-white font-semibold mt-4">
+              next step
+            </button>
+        </div>
+    </div>
+
+
+    <div class="rightSide hidden p-4 w-[80%] shadow-lg mx-auto bg-white rounded-lg -translate-y-10 lg:flex-auto lg:shadow-none lg:w-0 lg:translate-y-0 lg:basis-auto">
+        <h2 class="text-3xl font-bold title mb-3">Finishing up</h2>
+        <p class="text-slate-500 text-sm">Double-check everyThing looks OK before confirming</p>
+        <div class="ons-list my-6 flex flex-col gap-6">
+            
+                
+                <div class="item active rounded-md p-3 flex justify-between">
+                    <div>
+                    <h3 class="item-title-disabled">Online services</h3>
+                    <a href="#">change</a>
+                    </div>
+                    <p class="item-price">+1$/mo</p>
+                </div>
+                
+           
+            <div class="item flex justify-between p-3 rounded-md">
+                <div>   
+                <h3 class="item-title-disabled">Online service</h3>
+                <a href="#">change</a>
+                </div>
+                <p class="item-price">+1$/mo</p>
+            </div>
+            <div class="item rounded-md flex justify-between p-3">
+                <div>
+                <h3 class="item-title-disabled">Larger storage</h3>
+                <a href="#">change</a>        
+            </div>
+                <p class="item-price-disabled">+2$/mo</p>
+        </div>
+        
+        </div>
+        <div class="total flex items-center justify-between">
+            <p>Total(per month)</p>
+            <h2></h2>
+        </div>
+        <div class="btns flex  items-center justify-between">
+           
+            <button class="backstep rounded-md p-3 font-semibold">Backstep</button>
+            <button class="confirm rounded-md p-3 text-white font-semibold mt-4">
+                confirm
+              </button>
+        </div>
+    </div>
+    <div class="thankDiv p-4 w-[80%] shadow-lg mx-auto bg-white rounded-lg -translate-y-10 lg:flex-auto lg:shadow-none lg:w-0 lg:translate-y-0 lg:basis-auto hidden flex items-center justify-center p-4">
+        <div class="flex flex-col items-center gap-6">
+          <div class="h-12 w-12">
+          <img src="assets/icon-thank-you.svg" alt="thanks_svg" class="w-[100%]" />
+        </div>
+          <h2 class="text-3xl">Thank you!</h2>
+          <p class="max-w-sm text-center">Thanks for confirming subscription! We hope you have fun using our platform. If you ever need support, please 
+            feel free to email us at support@loremgaming.com
+          </p>
+        </div>
+    </div>
+    </div>
+    <script src="script.js">
+       const switcher=document.querySelector(".switcher")
+      switcher.addEventListener("click",()=>{
+        switcher.classList.toggle("active")
+      })
+    </script>
+  </body>
+</html>
